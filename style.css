@@ -21,3 +21,81 @@
   --whiteTitleColor: #F6F6F6;
   --asideBackgroundColor: #181818;
 }
+
+body {
+  background-color: var(--mainBackgroundColor);
+}
+
+aside {
+  background-color: var(--asideBackgroundColor);
+  padding: 1rem;
+}
+
+aside p {
+  color: var(--whiteTextColor);
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+header {
+  background-color: var(--mainBackgroundColor);
+  text-align: center;
+  padding: .5rem;
+  font-size: 1.5em;
+}
+
+header h1 {
+  font-weight: 600;
+  font-style: normal;
+}
+
+header h1 > a {
+  color: var(--darkTitleColor);
+}
+
+.headerMain {
+  background-image: url('assets/images/jordanBackgroundImage.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8.0625rem;
+  padding-left: 6.25rem;
+}
+
+.headerMain h2 {
+  color: var(--whiteTitleColor);
+  font-size: 2em;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+.headerMain p {
+  color: var(--whiteTextColor);
+  font-size: 1.125em;
+  padding-bottom: 7.5625rem;
+  width: 480px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.productsContent {
+  padding: 3.625rem 6.25rem;
+}
+
+.productsContent h2 {
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2em;
+  padding: 1rem;
+}
+
+.productsContent p {
+  color: var(--darkTextColor);
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125em;
+}
