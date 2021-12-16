@@ -20,6 +20,12 @@
   --darkTitleColor: #181818;
   --whiteTitleColor: #F6F6F6;
   --asideBackgroundColor: #181818;
+  --footerBackgroundColor: #181818;
+}
+
+
+.container {
+  padding: 0 6.25rem;
 }
 
 body {
@@ -60,7 +66,6 @@ header h1 > a {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 8.0625rem;
-  padding-left: 6.25rem;
 }
 
 .headerMain h2 {
@@ -81,7 +86,10 @@ header h1 > a {
 }
 
 .productsContent {
-  padding: 3.625rem 6.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .productsContent h2 {
@@ -98,4 +106,37 @@ header h1 > a {
   font-weight: 500;
   font-style: normal;
   font-size: 1.125em;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 2.43rem;
+  grid-column-gap: .81rem;
+  margin-top: 3.68rem;
+  margin-bottom: 6.25rem;
+}
+
+.card {
+  background-color: var(--cardBackgroundColor);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px var(--cardBackgroundColor);
+}
+
+.card img {
+  width: 250px;
+  height: 150px;
+}
+
+footer {
+  background-color: var(--footerBackgroundColor);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 500;
+  font-style: normal;
 }
