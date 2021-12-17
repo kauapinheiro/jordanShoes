@@ -13,16 +13,15 @@
 }
 
 :root {
-  --mainBackgroundColor: #F6F6F6;
-  --cardBackgroundColor: #EBE9EA;
+  --mainBackgroundColor: #f6f6f6;
+  --cardBackgroundColor: #ebe9ea;
   --darkTextColor: #474747;
-  --whiteTextColor: #F6F6F6;
+  --whiteTextColor: #f6f6f6;
   --darkTitleColor: #181818;
-  --whiteTitleColor: #F6F6F6;
+  --whiteTitleColor: #f6f6f6;
   --asideBackgroundColor: #181818;
   --footerBackgroundColor: #181818;
 }
-
 
 .container {
   padding: 0 6.25rem;
@@ -47,7 +46,7 @@ aside p {
 header {
   background-color: var(--mainBackgroundColor);
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1.5em;
 }
 
@@ -61,8 +60,8 @@ header h1 > a {
 }
 
 .headerMain {
-  background-image: url('assets/images/jordanBackgroundImage.jpg');
-  background-position: center;
+  background-image: url('assets/images/jordanBackground.jpg');
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 8.0625rem;
@@ -112,7 +111,7 @@ header h1 > a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 2.43rem;
-  grid-column-gap: .81rem;
+  grid-column-gap: 0.81rem;
   margin-top: 3.68rem;
   margin-bottom: 6.25rem;
 }
@@ -122,14 +121,66 @@ header h1 > a {
   width: 300px;
   height: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 1px 1px 1px var(--cardBackgroundColor);
+  border: 1px solid rgba(0, 0, 0, 0.144);
 }
 
-.card img {
-  width: 250px;
+.card .image img {
+  width: 170px;
   height: 150px;
+}
+
+.card .text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.card .text p.jordanName {
+  color: #000;
+}
+
+.card .text p.jordanPrice {
+  color: rgb(10, 126, 0);
+}
+
+.card .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem;
+  gap: 1rem;
+}
+
+.card .buttons a:hover {
+  text-decoration: underline;
+}
+
+.card .buttons a.buy {
+  background-color: var(--asideBackgroundColor);
+  color: #fff;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.card .buttons a.addToCart {
+  color: #000;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #000;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-style: normal;
 }
 
 footer {
