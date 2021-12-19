@@ -22,10 +22,14 @@
   --asideBackgroundColor: #181818;
   --footerBackgroundColor: #181818;
 
-  --1textFontSize: 1em;
-  --2textFontSize: 1.125em;
-  --1titleFontSize: 2em;
+  --1titleFontize: 2em;
   --2titleFontSize: 1.5em;
+  --1textFontSize: 1.125em;
+  --2textFontSize: 1em;
+  
+  --1titleFontSizeCard: 1em;
+  --1priceFontsizeCard: 1.1em;
+  --textButtonCard: 1em;
 }
 
 body {
@@ -42,35 +46,35 @@ aside p {
   font-weight: 500;
   font-style: normal;
   text-align: center;
+  font-size: var(--1textFontSize);
 }
 
 header {
   background-color: var(--mainBackgroundColor);
   text-align: center;
   padding: 0.5rem;
-  font-size: var(--1titleFontSize);
 }
 
-header h1 {
+header a {
+  font-size: 2em;
   font-weight: 600;
   font-style: normal;
-}
-
-header h1 > a {
   color: var(--darkTitleColor);
 }
 
 .headerMain {
   background-image: url('assets/images/jordanBackground.jpg');
-  background-position: top;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-left: 6.25rem;
   padding-top: 8.0625rem;
+  min-height: 25rem;
 }
 
 .headerMain h2 {
   color: var(--whiteTitleColor);
-  font-size: var(--1titleFontSize);
+  font-size: var(--1titleFontize);
   font-weight: 700;
   font-style: normal;
   margin-bottom: 1rem;
@@ -78,11 +82,12 @@ header h1 > a {
 
 .headerMain p {
   color: var(--whiteTextColor);
-  font-size: var(--2textFontSize);
-  padding-bottom: 7.5625rem;
   width: 480px;
+  padding-bottom: 7.5625rem;
+  font-size: var(--2textFontSize);
   font-weight: 600;
   font-style: normal;
+  line-height: 2.2em;
 }
 
 .productsContent {
@@ -96,7 +101,8 @@ header h1 > a {
   text-align: center;
   font-weight: 600;
   font-style: normal;
-  font-size: var(--1titleFontSize);
+  font-size: var(--1titleFontize);
+  margin-top: 3.6250rem;
   padding: 1rem;
 }
 
@@ -105,7 +111,7 @@ header h1 > a {
   text-align: center;
   font-weight: 500;
   font-style: normal;
-  font-size: var(--2textFontSize);
+  font-size: var(--1textFontSize);
 }
 
 .cardsContainer {
@@ -119,14 +125,14 @@ header h1 > a {
 
 .card {
   background-color: var(--cardBackgroundColor);
+  box-shadow: 1px 1px 1px var(--cardBackgroundColor);
+  border: 1px solid rgba(0, 0, 0, 0.144);
   width: 300px;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 1px var(--cardBackgroundColor);
-  border: 1px solid rgba(0, 0, 0, 0.144);
 }
 
 .card .image img {
@@ -137,16 +143,19 @@ header h1 > a {
 .card .text {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 0.8rem;
 }
 
 .card .text p.jordanName {
   color: #000;
+  font-size: var(--1titleFontSizeCard);
 }
 
 .card .text p.jordanPrice {
   color: rgb(10, 126, 0);
+  font-size: var(--1priceFontsizeCard);
 }
 
 .card .buttons {
@@ -167,10 +176,11 @@ header h1 > a {
   color: #fff;
   padding: 0.5rem;
   width: 100%;
-  text-align: center;
   font-size: 0.9em;
   font-weight: 500;
   font-style: normal;
+  font-size: var(--textButtonCard);
+  text-align: center;
 }
 
 .card .buttons a.addToCart {
@@ -191,4 +201,5 @@ footer {
   padding: 1rem;
   font-weight: 500;
   font-style: normal;
+  font-size: var(--2textFontSize);
 }
