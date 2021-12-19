@@ -121,9 +121,11 @@ header a {
 }
 
 .cardsContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2.43rem .81rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.43rem .81rem;
   margin-top: 3.68rem;
   margin-bottom: 6.25rem;
 }
@@ -207,7 +209,7 @@ footer {
   font-size: var(--2textFontSize);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   aside p {
     font-size: var(--textFontSizeMobile);
   }
@@ -227,6 +229,7 @@ footer {
   .headerMain p {
     font-size: var(--textFontSizeMobile);
     width: 100%;
+    padding-right: .8rem;
   }
 
   .productsContent h2 {
@@ -235,11 +238,7 @@ footer {
 
   .productsContent p {
     font-size: var(--textFontSizeMobile);
-  }
-
-  .cardsContainer {
-    display: grid;
-    grid-template-columns: 1fr;
+    margin: 0 1rem;
   }
 
   .card {
