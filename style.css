@@ -38,6 +38,11 @@
   --2titleFontSizeMobile: 1.5em;
 }
 
+::selection {
+  background-color: #181818;
+  color: #fff;
+}
+
 body {
   background-color: var(--mainBackgroundColor);
 }
