@@ -47,19 +47,6 @@ body {
   background-color: var(--mainBackgroundColor);
 }
 
-aside {
-  background-color: var(--asideBackgroundColor);
-  padding: 1rem;
-}
-
-aside p {
-  color: var(--whiteTextColor);
-  font-weight: 500;
-  font-style: normal;
-  text-align: center;
-  font-size: var(--1textFontSize);
-}
-
 header {
   background-color: var(--mainBackgroundColor);
   text-align: center;
@@ -235,10 +222,6 @@ footer ul li > a:hover {
 }
 
 @media (max-width: 800px) {
-  aside p {
-    font-size: var(--textFontSizeMobile);
-  }
-
   header a {
     font-size: var(--2titleFontSizeMobile);
   }
