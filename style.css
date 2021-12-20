@@ -232,6 +232,7 @@ footer ul li > a:hover {
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: color;
     background-size: cover;
+    background-position: center;
     padding-left: 1rem;
   }
 
