@@ -244,10 +244,11 @@ footer ul li > a:hover {
   }
 
   .headerMain {
+    background-image: url('assets/images/jordanBackground.jpg');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
     background-size: cover;
-    background-position: center;
-    background-attachment: local;
-    min-height: 10rem;
     padding-left: 1rem;
   }
 
