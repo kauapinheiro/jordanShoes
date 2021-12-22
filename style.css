@@ -86,7 +86,7 @@ header .toggleMenu {
 header .toggleMenu .one,
 header .toggleMenu .two,
 header .toggleMenu .three {
-  height: 2px;
+  height: 3px;
   background-color: #181818;
   margin: 4px 0;
 }
@@ -98,10 +98,15 @@ header .toggleMenu .three {
   background-blend-mode: color;
   background-size: cover;
   padding-top: 8.0625rem;
-  padding-left: 5rem;
 }
 
-.headerMain h2 {
+.headerMain .text {
+  max-width: 1366px;
+  width: 95%;
+  margin: auto;
+}
+
+.headerMain .text h2 {
   color: var(--whiteTitleColor);
   font-size: var(--1titleFontize);
   font-weight: 700;
@@ -109,9 +114,8 @@ header .toggleMenu .three {
   margin-bottom: 1rem;
 }
 
-.headerMain p {
+.headerMain .text p {
   color: var(--whiteTextColor);
-  width: 480px;
   padding-bottom: 7.5625rem;
   font-size: var(--2textFontSize);
   font-weight: 600;
@@ -124,6 +128,10 @@ header .toggleMenu .three {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: 95%;
+  max-width: 1366px;
+  margin: auto;
 }
 
 .productsContent h2 {
@@ -132,7 +140,7 @@ header .toggleMenu .three {
   font-style: normal;
   font-size: var(--1titleFontize);
   margin-top: 3.625rem;
-  padding: 1rem;
+  margin-bottom: 1.625rem;
 }
 
 .productsContent p {
@@ -144,10 +152,10 @@ header .toggleMenu .three {
 }
 
 .cardsContainer {
-  width: 90%;
+  width: 95%;
   max-width: 1300px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2.43rem 0.81rem;
   margin-top: 3.68rem;
   margin-bottom: 6.25rem;
@@ -172,11 +180,12 @@ header .toggleMenu .three {
 }
 
 .card .text {
+  width: 95%;
+  margin-bottom: 1rem;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 0.8rem;
 }
 
 .card .text p.jordanName {
@@ -190,11 +199,10 @@ header .toggleMenu .three {
 }
 
 .card .buttons {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.8rem;
   gap: 1rem;
 }
 
@@ -229,7 +237,7 @@ footer {
   background-color: var(--footerBackgroundColor);
   color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0;
   font-weight: 500;
   font-style: normal;
   font-size: var(--2textFontSize);
@@ -237,8 +245,11 @@ footer {
 
 footer ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+
+  width: 95%;
+  margin: auto;
 }
 
 footer ul li > a {
@@ -261,16 +272,10 @@ footer ul li > a:hover {
     background-blend-mode: color;
     background-size: cover;
     background-position: center;
-    padding-left: 1rem;
   }
 
   .headerMain p {
     width: 100%;
-    padding-right: 0.8rem;
-  }
-
-  .productsContent p {
-    margin: 0 1rem;
   }
 
   .cardsContainer {
