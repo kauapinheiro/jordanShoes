@@ -157,6 +157,7 @@ header .toggleMenu .three {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2.43rem 0.81rem;
+  justify-content: center;
   margin-top: 3.68rem;
   margin-bottom: 6.25rem;
 }
@@ -260,7 +261,7 @@ footer ul li > a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html {
     font-size: 90%;
   }
@@ -271,15 +272,12 @@ footer ul li > a:hover {
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: color;
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    padding-top: 4rem;
   }
 
   .headerMain p {
     width: 100%;
-  }
-
-  .cardsContainer {
-    padding: 0;
   }
 }
 
@@ -290,5 +288,19 @@ footer ul li > a:hover {
 
   header .toggleMenu {
     display: block;
+  }
+
+  .productsContent h2 {
+    margin-top: 1.625rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .headerMain {
+    padding-top: 3rem;
+  }
+
+  .headerMain .text p {
+    padding-bottom: 3rem;
   }
 }
