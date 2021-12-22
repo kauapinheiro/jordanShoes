@@ -5,7 +5,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  border: none;
+  border: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -23,24 +23,25 @@
   --asideBackgroundColor: #181818;
   --footerBackgroundColor: #181818;
 
-  --1titleFontize: 2em;
-  --2titleFontSize: 1.5em;
-  --1textFontSize: 1.125em;
-  --2textFontSize: 1em;
+  --1titleFontize: 2rem;
+  --2titleFontSize: 1.5rem;
+  --1textFontSize: 1.125rem;
+  --2textFontSize: 1rem;
 
-  --1titleFontSizeCard: 1em;
-  --1priceFontsizeCard: 1.1em;
-  --textButtonCard: 1em;
+  --1titleFontSizeCard: 1rem;
+  --1priceFontsizeCard: 1.1rem;
+  --textButtonCard: 1rem;
 
   /* Mobile Variables */
-  --textFontSizeMobile: 1em;
-  --1titleFontSizeMobile: 1.75em;
-  --2titleFontSizeMobile: 1.5em;
 }
 
 ::selection {
   background-color: #181818;
   color: #fff;
+}
+
+html {
+  font-size: 100%;
 }
 
 body {
@@ -54,7 +55,7 @@ header {
 }
 
 header a {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 600;
   font-style: normal;
   color: var(--darkTitleColor);
@@ -85,7 +86,7 @@ header a {
   font-size: var(--2textFontSize);
   font-weight: 600;
   font-style: normal;
-  line-height: 2.2em;
+  line-height: 2.2rem;
 }
 
 .productsContent {
@@ -176,7 +177,7 @@ header a {
   color: #fff;
   padding: 0.5rem;
   width: 100%;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-weight: 500;
   font-style: normal;
   font-size: var(--textButtonCard);
@@ -219,8 +220,8 @@ footer ul li > a:hover {
 }
 
 @media (max-width: 800px) {
-  header a {
-    font-size: var(--2titleFontSizeMobile);
+  html {
+    font-size: 90%;
   }
 
   .headerMain {
@@ -233,22 +234,12 @@ footer ul li > a:hover {
     padding-left: 1rem;
   }
 
-  .headerMain h2 {
-    font-size: var(--1titleFontSizeMobile);
-  }
-
   .headerMain p {
-    font-size: var(--textFontSizeMobile);
     width: 100%;
     padding-right: 0.8rem;
   }
 
-  .productsContent h2 {
-    font-size: var(--1titleFontSizeMobile);
-  }
-
   .productsContent p {
-    font-size: var(--textFontSizeMobile);
     margin: 0 1rem;
   }
 
